@@ -7,15 +7,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="images/icons/favicon.png">
+	<link rel="shortcut icon" href="core/images/icons/favicon.png">
 	<title>Title here</title>
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
-	<link href="styles/bootstrap.min.css" rel="stylesheet">
-	<link href="styles/custom.css" rel="stylesheet">
-	<link href="styles/customMedia.css" rel="stylesheet">
+	<link href="core/styles/bootstrap.min.css" rel="stylesheet">
+	<link href="core/styles/custom.css" rel="stylesheet">
+	<link href="core/styles/customMedia.css" rel="stylesheet">
 	<!--[if lte IE 8]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -28,7 +28,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-3">
 					<a href="/" class="brand">
-						<img itemprop="logo" src="images/icons/logo.jpg" alt="Logo name">
+						<img itemprop="logo" src="core/images/icons/logo.jpg" alt="Logo name">
 						<meta itemprop="name" content="Church name">
 					</a>
 					<div class="navToggle"></div>
@@ -48,14 +48,14 @@
 
 	<section class="carousel slide" id="presentationSlider">
 		<div class="carousel-inner">
-			<div class="item active" style="background: url(images/slideshow/slideshowEx1.jpg);">
+			<div class="item active" style="background: url(core/images/slideshow/slideshowEx1.jpg);">
 				<div class="carousel-caption">
 					<h1>Headline</h1>
 					<p>Subtitle</p>	
 					<a href="#" class="button">Slider Cta</a>
 				</div>	
 			</div>
-			<div class="item" style="background: url(images/slideshow/slideshowEx2.jpg);">
+			<div class="item" style="background: url(core/images/slideshow/slideshowEx2.jpg);">
 				<div class="carousel-caption">
 					<h1>Headline 2</h1>
 					<p>Subtitle 2</p>	
@@ -180,7 +180,7 @@
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
-	<script src="includes/bootstrap.min.js"></script>
-	<script src="includes/javascript.js"></script>
+	<script src="core/includes/bootstrap.min.js"></script>
+	<script src="core/includes/javascript.js"></script>
 </body>
 </html>
