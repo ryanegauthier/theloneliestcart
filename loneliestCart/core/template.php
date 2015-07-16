@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="core/images/icons/favicon.png">
-	<title>Title here</title>
+	<title>The Loneliest Cart</title>
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -28,7 +28,11 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-3">
 					<a href="/" class="brand">
-						<img itemprop="logo" src="core/images/icons/logo.jpg" alt="Logo name">
+<!--
+						<img itemprop="logo" src="core/images/icons/logo.png" alt="Logo name">
+						<img itemprop="logo" src="core/images/icons/logo2.png" alt="Logo name">
+-->
+						<img itemprop="logo" src="core/images/icons/logo3.png" alt="Logo name">
 						<meta itemprop="name" content="Church name">
 					</a>
 					<div class="navToggle"></div>
@@ -36,7 +40,7 @@
 				<div class="col-xs-12 col-sm-9">
 					<nav>
 						<ul>
-							<li><a href="#">Home</a></li>
+<!-- 							<li><a href="#">Home</a></li> -->
 							<li><a href="#">Nav item 1</a></li>
 							<li><a href="#">Nav item 2</a></li>
 						</ul>							
