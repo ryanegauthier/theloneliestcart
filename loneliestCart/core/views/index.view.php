@@ -21,5 +21,3 @@
 		<li data-target="#presentationSlider" data-slide-to="1"></li>
 	</ol>		
 </section>
-
-THIS IS THE INDEX VIEW!!!

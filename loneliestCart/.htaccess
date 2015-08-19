@@ -1,0 +1,55 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Remove Magic Quotes
+php_flag magic_quotes_gpc off  
+
+# Installation directory
+RewriteBase /
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* /index.php?url=$0 [PT,L]
+
+<IfModule deflate_module>
+#####################################
+## Compress everything except images
+## http://httpd.apache.org/docs/2.2/mod/mod_deflate.html
+
+# Insert filter
+SetOutputFilter DEFLATE
+
+# Netscape 4.x has some problems…
+#BrowserMatch ^Mozilla/4 gzip-only-text/html
+
+# Netscape 4.06-4.08 have some more problems
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+
+# MSIE masquerades as Netscape, but it is fine
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+# Don't compress images
+#SetEnvIfNoCase Request_URI \
+\.(?:gif|jpe?g|png)$ no-gzip dont-vary
+
+## Make sure proxies don't deliver the wrong content
+#Header append Vary User-Agent env=!dont-vary
+</IfModule>
+
+<IfModule expires_module>
+############################################
+## Add default Expires header
+## http://httpd.apache.org/docs/2.1/mod/mod_expires.html
+## http://www.askapache.com/htaccess/htaccess.html
+ExpiresActive On
+ExpiresDefault "access plus 2 months"
+ExpiresByType image/x-icon "access plus 2 months"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType text/html "access plus 1 week"
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+ExpiresActive Off
+</FilesMatch>
+</IfModule>
